@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- viewport meta to reset iPhone inital scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>考试须知</title>
+
+    <!-- css3-mediaqueries.js for IE8 or older -->
+    <!--[if lt IE 9]>
+
+    <![endif]-->
+
+    <style type="text/css">
+
+        html body {
+
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        /************************************************************************************
+        STRUCTURE
+        *************************************************************************************/
+        #pagewrap {
+
+            width: 1024px;
+            height: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            background: url("images/backgroundOfEnter.jpg") ;
+            background-size: 100% ;
+        }
+        #header {
+            height: 160px;
+        }
+
+
+        #content {
+            margin: 70px auto 0 auto;
+            text-align: center;
+
+        }
+		
+		textarea{font-size:15px;}
+
+        #footer {
+            height: 20px;
+        }
+
+
+       #ksxz{
+           width:550px;
+           height: 280px;
+		   color:black;
+		   padding:20px 20px 0px 20px;
+           text-align:center;
+
+       }
+
+        .button {
+            width: 182px;
+            height: 42px;
+            cursor: pointer;
+            font-size: 16;
+            color: red;
+            
+            
+        }
+        
+        #login{
+            background: url("images/login.jpg") no-repeat;
+        }
+        #exit{
+            background: url("images/exit.jpg") no-repeat;
+        
+        }
+		
+		.button:disabled {
+			color: gray;
+			cursor:inherit;
+		}
+        #is_agree{
+		}
+	
+
+    </style>
+</head>
+
+<body>
+
+<div id="pagewrap">
+
+    <div id="header">
+
+    </div>
+
+    <div id="main">
+        <div id="content">
+            <textarea id="ksxz"  readonly='true'>
+
+            </textarea>
+            <div style="text-align: center;margin: 10px 0 10px 0;"><input type="checkbox" id="is_agree"/><label for="is_agree">同意考试须知</label></div>
+
+            <div>
+                <input id="login" type="button" disabled class="button" />
+                <input id="exit" type="button" class="button" />
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div id="footer">
+
+    </div>
+
+</div>
+
+</body>
+</html>
